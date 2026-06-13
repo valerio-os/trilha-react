@@ -1,0 +1,89 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ea9d46;
+  padding: 0 2rem;
+  border-bottom: 3px solid #000;
+}
+
+.navbar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.navbar__link {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.1rem 1.4rem;
+  display: block;
+  transition: background 0.15s, color 0.15s;
+}
+
+.navbar__link:hover {
+  background-color: #000;
+  color: #ea9d46;
+}
+
+.navbar__link--nodrop {
+  cursor: default;
+}
+
+.navbar__link--nodrop:hover {
+  background-color: #000;
+  color: #ea9d46;
+}
+
+.navbar__link--login {
+  border-left: 3px solid #000;
+  margin-left: auto;
+}
+
+.navbar__dropdown-wrapper {
+  position: relative;
+}
+
+.navbar__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 140px;
+  border: 2px solid #ea9d46;
+  z-index: 200;
+}
+
+.navbar__dropdown-wrapper:hover .navbar__dropdown {
+  display: block;
+}
+
+.navbar__dropdown-item {
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: #ea9d46;
+  padding: 0.75rem 1.2rem;
+  border-bottom: 1px solid #333;
+  cursor: default;
+  text-transform: uppercase;
+}
+
+.navbar__dropdown-item:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,90 @@
+
+.conpets {
+  background: #f5f0e8;
+  padding: 5rem 4rem 4rem;
+  border-bottom: 3px solid #000;
+}
+
+.conpets__title {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  color: #000;
+  margin: 0 0 3rem;
+  text-transform: capitalize;
+}
+
+
+.conpets__card {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+
+.conpets__image-wrap {
+  flex: 0 0 320px;
+  height: 400px;
+  overflow: hidden;
+  border: 3px solid #000;
+}
+
+.conpets__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.conpets__info {
+  flex: 1;
+  border-left: 3px solid #ea9d46;
+  padding-left: 1.5rem;
+  padding-top: 0.3rem;
+}
+
+.conpets__tag-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.conpets__tag-bar {
+  display: inline-block;
+  width: 22px;
+  height: 10px;
+  background: #ea9d46;
+}
+
+.conpets__name {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #bf3f2f;
+}
+
+.conpets__divider {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  margin-bottom: 1rem;
+}
+
+.conpets__para {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: #111;
+  margin: 0 0 0.9rem;
+}
+
+.conpets__para:last-child {
+  margin-bottom: 0;
+}
